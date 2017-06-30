@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Граница вокруг формы</title>
+		<style type="text/css">
+			fieldset {
+				width:500px;
+				height: 280px;
+				border: 1px solid rgba(0, 127, 4, 1);
+				background-color: rgba(0, 127, 4, 0.3);
+				z-index: 5;
+				position: fixed;
+			}
+
+			img {
+				position: absolute;
+				padding: 15px 22px;
+				z-index: 2;
+			}
+
+			h4 {
+				margin-top: 0;
+				margin-right: 20px;
+				margin-left: 10px;
+			}
+
+			form {
+				padding-left: 150px;
+			}
+
+			input[value="Ответить"] {
+				background-color: rgba(0, 127, 4, 0.5);
+				color: white;
+				border: 1px solid white;
+			}
+
+			legend {
+				font-family: sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+				color: rgba(0, 127, 4, 1);
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Выбор варианта</legend>
+			<h4>Какой раздел психологии изучает познавательные процессы человеческого сознания?</h4>
+			<form>
+				<p><input type="radio" name="rad1">Психоанализ</p>
+				<p><input type="radio" name="rad">Бихевизм</p>
+				<p><input type="radio" name="rad">Когнитивная психология</p>
+				<p><input type="radio" name="rad">Гуманистическая психология</p>
+				<p><input type="radio" name="rad">Гештальт-психология</p>
+				<p><input type="submit" value="Ответить"></p>
+			</form>
+		</fieldset>		
+		<img src="http://htmlbook.ru/files/check-bg.png">
+	</body>
+</html>

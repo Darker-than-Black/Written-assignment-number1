@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Форма регистрации</title>
+		<style type="text/css">
+			form {
+				height: 200px;
+				width: 350px;
+				border: 3px solid #0075B2;
+				background-color: #0096DB;
+				color: white;
+				padding: 10px 25px;
+			}
+
+			input[type="submit"] {
+				background-color: rgba(237, 175, 83, 1);
+				border: none;
+				padding: 4px 7px;
+				position: relative ;
+    			top: 20px;
+			}
+
+			p {
+				margin: 3px 0;
+			}
+
+			h1 {
+				margin: 0; 
+				padding: 10px 0;
+			}
+
+			div {
+				margin-bottom: 5px;
+				border-bottom: 1px solid white;
+			}
+
+			#mail {
+				width: 88%;
+				margin-top: 3px;
+				margin-bottom: 7px;
+			}
+
+			#pass1,
+			#pass2 {
+				width: 40%;
+			}
+
+			#pass2 {
+				margin-left: 5%;: 
+			}
+
+			#lab-pass2 {
+				position: relative;
+				margin-left: 29%;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1>Регистрация</h1>
+			<div></div>
+			<label for="mail">E-mail<br/></label><input type="text" id="mail" required="required"> <br />
+			<p><label for="pass1">Password</label> <label for="pass2" id="lab-pass2">Ещё раз</label><br/></p>
+			<input type="password" id="pass1" required="required">
+			<input type="password" id="pass2" required="required">
+			<br/><input type="submit" value="Отправить">
+		</form>
+	</body>
+</html>
