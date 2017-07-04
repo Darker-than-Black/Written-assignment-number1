@@ -7,21 +7,18 @@
 			.background-photo {
 				height: 380px;
 				width: 600px;
-				background-image: url(http://htmlbook.ru/files/river.jpg);
+				position: fixed;
+				z-index: 10;
 			}
 
 			li {
-				position: relative;
 				list-style: none;
 				padding-left: 5px;
 				float: left;
-				left: 235px;
-				top: 348px;
 			}
 
 			span {
 				display: block;
-				position: relative;
 				width: 10px;
 				height: 10px;
 				border-radius: 100%;
@@ -34,16 +31,24 @@
 				box-shadow: 0 0 20px #fff;
 				cursor: pointer;
 			}
+
+			ul {
+				padding: 0;
+				position: absolute;
+				z-index: 100;
+				left: 235px;
+				top: 348px;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="background-photo">
-				<li><a href="#"><span></span></a></li>
-				<li><a href="#"><span></span></a></li>
-				<li><a href="#"><span></span></a></li>
-				<li><a href="#"><span></span></a></li>
-				<li><a href="#"><span></span></a></li>
-		</div>
-
+		<img src="http://htmlbook.ru/files/river.jpg" class="background-photo">
+		<ul>
+			<li><a href="#"><span></span></a></li>
+			<li><a href="#"><span></span></a></li>
+			<li><a href="#"><span></span></a></li>
+			<li><a href="#"><span></span></a></li>
+			<li><a href="#"><span></span></a></li>	
+		</ul>
 	</body>
 </html>

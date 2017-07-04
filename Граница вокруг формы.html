@@ -9,14 +9,15 @@
 				height: 280px;
 				border: 1px solid rgba(0, 127, 4, 1);
 				background-color: rgba(0, 127, 4, 0.3);
-				z-index: 5;
-				position: fixed;
+				z-index: 100; 
+				
 			}
 
-			img {
-				position: absolute;
-				padding: 15px 22px;
-				z-index: 2;
+			#background-photo {
+				position: absolute; 
+				z-index: -1; 
+				left: 27px;
+				top: 23px; 
 			}
 
 			h4 {
@@ -46,6 +47,7 @@
 	<body>
 		<fieldset>
 			<legend>Выбор варианта</legend>
+			<img src="http://htmlbook.ru/files/check-bg.png" id="background-photo">
 			<h4>Какой раздел психологии изучает познавательные процессы человеческого сознания?</h4>
 			<form>
 				<p><input type="radio" name="rad1">Психоанализ</p>
@@ -54,8 +56,8 @@
 				<p><input type="radio" name="rad">Гуманистическая психология</p>
 				<p><input type="radio" name="rad">Гештальт-психология</p>
 				<p><input type="submit" value="Ответить"></p>
-			</form>
+			</form>		
 		</fieldset>		
-		<img src="http://htmlbook.ru/files/check-bg.png">
+		
 	</body>
 </html>
